@@ -105,7 +105,7 @@ If ($DisableChangePWD -and $EnableChangePWD)
 }	
 ElseIf ($DisableChangePWD -or $EnableChangePWD)
 	{
-		If (!(Test-Path -Path $Path_Explorer))
+		If (!(Test-Path -Path $Path_System))
 		{
 			New-Item -Path $Path_System | Out-Null
 		}
@@ -132,7 +132,7 @@ If ($DisableSwitchUser -and $EnableSwitchUser)
 }		
 ElseIf ($DisableSwitchUser -or $EnableSwitchUser)
 	{
-		If (!(Test-Path -Path $Path_Explorer))
+		If (!(Test-Path -Path $Path_System))
 		{
 			New-Item -Path $Path_System | Out-Null
 		}
