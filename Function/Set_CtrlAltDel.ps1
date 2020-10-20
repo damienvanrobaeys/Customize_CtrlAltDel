@@ -41,14 +41,7 @@ function Set_CtrlAltDel
 				$DisableLockWorkstation_Value = 0			
 			}	
 
-			If((Get-ItemProperty -Path $Path_System -Name DisableLockWorkstation -ErrorAction SilentlyContinue) -eq $null)
-				{
-					New-ItemProperty -Path $Path_System -Name DisableLockWorkstation -Value $DisableLockWorkstation_Value -Force -ErrorAction SilentlyContinue | Out-Null				
-				}
-			Else
-				{
-					Set-ItemProperty -path $Path_System -name DisableLockWorkstation -value $DisableLockWorkstation_Value -Force -ErrorAction SilentlyContinue | Out-Null						
-				}		
+			New-ItemProperty -Path $Path_System -Name DisableLockWorkstation -Value $DisableLockWorkstation_Value -Force -ErrorAction SilentlyContinue | Out-Null					
 		}
 
 
@@ -75,14 +68,7 @@ function Set_CtrlAltDel
 				$DisableTaskMgr_Value = 0			
 			}	
 
-			If((Get-ItemProperty -Path $Path_System -Name DisableTaskMgr -ErrorAction SilentlyContinue) -eq $null)
-				{
-					New-ItemProperty -Path $Path_System -Name DisableTaskMgr -Value $DisableTaskMgr_Value -Force -ErrorAction SilentlyContinue | Out-Null				
-				}
-			Else
-				{
-					Set-ItemProperty -path $Path_System -name DisableTaskMgr -value $DisableTaskMgr_Value -Force -ErrorAction SilentlyContinue | Out-Null						
-				}		
+			New-ItemProperty -Path $Path_System -Name DisableTaskMgr -Value $DisableTaskMgr_Value -Force -ErrorAction SilentlyContinue | Out-Null					
 		}
 
 
@@ -109,14 +95,7 @@ function Set_CtrlAltDel
 				$DisableLogOff_Value = 0			
 			}	
 
-			If((Get-ItemProperty -Path $Path_Explorer -Name NoLogoff -ErrorAction SilentlyContinue) -eq $null)
-				{
-					New-ItemProperty -Path $Path_Explorer -Name NoLogoff -Value $DisableLogOff_Value -Force -ErrorAction SilentlyContinue | Out-Null				
-				}
-			Else
-				{
-					Set-ItemProperty -path $Path_Explorer -name NoLogoff -value $DisableLogOff_Value -Force -ErrorAction SilentlyContinue | Out-Null						
-				}						
+			New-ItemProperty -Path $Path_Explorer -Name NoLogoff -Value $DisableLogOff_Value -Force -ErrorAction SilentlyContinue | Out-Null										
 		}	
 
 
@@ -128,7 +107,7 @@ function Set_CtrlAltDel
     }	
 	ElseIf ($DisableChangePWD -or $EnableChangePWD)
 		{
-			If (!(Test-Path -Path $Path_Explorer))
+			If (!(Test-Path -Path $Path_System))
 			{
 				New-Item -Path $Path_System | Out-Null
 			}
@@ -143,14 +122,7 @@ function Set_CtrlAltDel
 				$DisableChangePWD_Value = 0			
 			}	
 
-			If((Get-ItemProperty -Path $Path_System -Name DisableChangePassword -ErrorAction SilentlyContinue) -eq $null)
-				{
-					New-ItemProperty -Path $Path_System -Name DisableChangePassword -Value $DisableChangePWD_Value -Force -ErrorAction SilentlyContinue | Out-Null				
-				}
-			Else
-				{
-					Set-ItemProperty -path $Path_System -name DisableChangePassword -value $DisableChangePWD_Value -Force -ErrorAction SilentlyContinue | Out-Null						
-				}						
+			New-ItemProperty -Path $Path_System -Name DisableChangePassword -Value $DisableChangePWD_Value -Force -ErrorAction SilentlyContinue | Out-Null									
 		}	
 
 	
@@ -162,7 +134,7 @@ function Set_CtrlAltDel
     }		
 	ElseIf ($DisableSwitchUser -or $EnableSwitchUser)
 		{
-			If (!(Test-Path -Path $Path_Explorer))
+			If (!(Test-Path -Path $Path_System))
 			{
 				New-Item -Path $Path_System | Out-Null
 			}
@@ -177,14 +149,7 @@ function Set_CtrlAltDel
 				$DisableSwitchUser_Value = 0			
 			}	
 
-			If((Get-ItemProperty -Path $Path_System -Name HideFastUserSwitching -ErrorAction SilentlyContinue) -eq $null)
-				{
-					New-ItemProperty -Path $Path_System -Name HideFastUserSwitching -Value $DisableSwitchUser_Value -Force -ErrorAction SilentlyContinue | Out-Null				
-				}
-			Else
-				{
-					Set-ItemProperty -path $Path_System -name HideFastUserSwitching -value $DisableSwitchUser_Value -Force -ErrorAction SilentlyContinue | Out-Null						
-				}							
+			New-ItemProperty -Path $Path_System -Name HideFastUserSwitching -Value $DisableSwitchUser_Value -Force -ErrorAction SilentlyContinue | Out-Null										
 		}		
 
 	
