@@ -1,4 +1,7 @@
-# Customize CtrlAltDel buttons: Sign out, Lock Task
+# Customize CtrlAltDel buttons: Hide or display buttons
+
+![alt text](https://github.com/damienvanrobaeys/Customize_CtrlAltDel/blob/main/ctrlaltdel_preview.JPG)
+
 
 **Available scripts**
 Allows you to hid or display below buttons from the CtrilAltDel
