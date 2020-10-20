@@ -1,6 +1,7 @@
 # Customize CtrlAltDel buttons: Hide or display buttons
 
 ![alt text](https://github.com/damienvanrobaeys/Customize_CtrlAltDel/blob/main/ctrlaltdel_preview.JPG&s=200)
+<img src="https://github.com/damienvanrobaeys/Customize_CtrlAltDel/blob/main/ctrlaltdel_preview.JPG" width="100" height="100">
 
 
 
