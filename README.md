@@ -2,7 +2,7 @@
 
 <img src="https://github.com/damienvanrobaeys/Customize_CtrlAltDel/blob/main/ctrlaltdel_preview.JPG" width="500" align="center">
 
-
+** !!! To run with admin rights !!!**
 
 
 **Available scripts**
